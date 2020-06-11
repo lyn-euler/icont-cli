@@ -1,0 +1,34 @@
+{
+  "name": "icont-cli",
+  "version": "1.0.3",
+  "description": "a tool to convert svg to ttf",
+  "main": "bin/index.js",
+  "bin":{
+    "icont": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyn-euler/icont-cli.git"
+  },
+  "keywords": [
+    "svg",
+    "flutter",
+    "ttf"
+  ],
+  "author": "lyn-euler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lyn-euler/icont-cli/issues"
+  },
+  "homepage": "https://github.com/lyn-euler/icont-cli#readme",
+  "dependencies": {
+    "colors-cli": "^1.0.27",
+    "commander": "^5.1.0",
+    "copy-template-dir": "^1.4.0",
+    "svg2ttf": "^5.0.0",
+    "svgicons2svgfont": "^9.1.1"
+  }
+}

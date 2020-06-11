@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>svg-to-font</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <link rel="stylesheet" href="{{cssPath}}" />
+  
+  <style>
+    *{margin: 0;padding: 0;list-style: none;}
+    body { color: #696969; font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif; }
+    h1 {
+      line-height: 80px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+      line-height: 40px;
+      text-align: center;
+    }
+    .icons { max-width: 1190px; margin: 0 auto; }
+    .icons ul { padding-bottom: 30px; }
+    .icons ul li {
+      vertical-align: top;
+      width: 160px;
+      display: inline-block;
+      text-align: center;
+      background-color: #efefef;
+      border-radius: 3px;
+      padding: 29px 0 10px 0;
+      margin-right: 10px;
+      margin-top: 10px;
+      transition: all 0.6s ease;
+    }
+    .icons ul li p {
+      height: 35px;
+    }
+    .icons ul li i {
+      font-size: 26px;
+    }
+    .icons ul li:hover { background-color: #dcdcdc; color: #3c75e4; }
+  </style>
+</head>
+
+<body>
+  <h1>svg-to-font</h1>
+  <h2>GitHub:<a target="_blank" href="https://github.com/lyn-euler/icont-cli">lyn-euler</a></h2>
+  <div class="icons">
+    <ul>{{iconList}}
+    </ul>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "{{fontname}}";
+  src: url("{{fontname}}.ttf?t={{timestamp}}"); /* IE9*/
+  src: /**
+  *url("{{fontsDistName}}/{{fontname}}.eot?t={{timestamp}}#iefix") format("embedded-opentype"), // IE6-IE8
+  *url("{{fontsDistName}}/{{fontname}}.woff?t={{timestamp}}") format("woff"),
+  */
+  url("{{fontname}}.ttf?t={{timestamp}}") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url("{{fontname}}.svg?t={{timestamp}}#{{fontname}}") format("svg"); /* iOS 4.1- */
+}
+
+[class^="icont-"], [class*=" icont-"] {
+  font-family: '{{fontname}}' !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+{{cssString}}
