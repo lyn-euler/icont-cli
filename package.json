@@ -1,6 +1,6 @@
 {
   "name": "icont-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a tool to convert svg to ttf",
   "main": "bin/index.js",
   "bin": {

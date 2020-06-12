@@ -42,10 +42,12 @@ const copyfile = (src, dist, ext) =>
     let files = fs
       .readdirSync(srcDir, "utf-8")
       .filter((value) => path.extname(value) === `${ext}`);
-    files.forEach((file) => {
-      _filecopy(path.join(srcDir,file), distDir).catch(err => {
-        console.error(err);
-    }) ;
+      files.forEach((file) => {
+        _filecopy(path.join(srcDir,file), distDir).catch(err => {
+          console.error(err);
+          reject(err);
+      }) ;
+      resolve();
     });
   });
 
