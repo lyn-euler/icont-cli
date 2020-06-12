@@ -42,3 +42,36 @@ Options:
   -h, --help           display help for command
 ```
 
+## Flutter Project Configuration Demo
+
+- pubspec.yaml
+
+```shell
+fonts:
+    - family: iconfonts
+      fonts:
+        - asset: iconfonts/iconfonts.ttf
+```
+
+- script sample
+
+```shell
+#!/usr/bin/env bash
+if [ ! `command -v icont` ]; then
+  npm install -g icont-cli
+fi
+
+temp_dir='.icont'
+fonts_dir='fonts'
+dart_path='lib'
+
+# svg to ttf & dart
+icont -i svg -o $temp_dir
+
+# copy to target dir
+icont copy -s $temp_dir -d $fonts_dir -e .ttf
+icont copy -s $temp_dir -d $dart_path -e .dart
+
+# delete temp dir
+# rm -rf $temp_dir
+```
