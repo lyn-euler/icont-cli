@@ -176,7 +176,7 @@ const createDart = (options) => new Promise((resolve, reject) => {
     iconList.push(
       `
       static const IconData ${name} =
-      IconData(${code}, fontFamily: _family, fontPackage: _fontPackage);`
+      IconData(0x${code}, fontFamily: _family, fontPackage: _fontPackage);`
     );
   });
 

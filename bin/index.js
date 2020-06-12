@@ -14,7 +14,7 @@ program
   .requiredOption(
     "-i, --" + OptionKeys.input + " <path|dir>",
     "input svg dir or file path",
-    undefined
+    "svg"
   )
   .option("-o, --" + OptionKeys.output + " <dir>", "output path", "output")
   .option(
