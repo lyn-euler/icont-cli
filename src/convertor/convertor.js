@@ -48,7 +48,8 @@ const createSVG = (options) =>
   new Promise((resolve, reject) => {
     const icons2Font = new SVGIcons2SVGFont({
       fontName: options[OptionKeys.fontname],
-      fixedWidth: true,
+      fontHeight: 1000,
+      normalize: true,
     });
 
     const OUTPUT_SVG_FILE = path.join(
@@ -88,7 +89,7 @@ const createTTF = (svg, options) =>
       return;
     }
     
-    let ttf = svg2ttf(svg);
+    let ttf = svg2ttf(svg, {});
 
     const OUTPUT_TTF_FILE = path.join(
       process.cwd(),
